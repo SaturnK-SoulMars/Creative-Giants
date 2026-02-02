@@ -3,7 +3,7 @@ import React from 'react'
 const Title = () => {
   return (
     <div className='absolute top-0 left-0 h-[40vh] md:h-[70vh] w-full bg-[#ffffffb9]'>
-      <div className='w-full h-full  p-5 flex items-end mix-blend-screen bg-[#FFFFFE]'>
+      <div className='w-full h-full px-8  py-5 flex items-end mix-blend-screen bg-[#FFFFFE]'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"

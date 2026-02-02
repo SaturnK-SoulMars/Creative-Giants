@@ -2,6 +2,7 @@ import React from 'react'
 import BgVid from '../Components/BgVid'
 import Title from '../Components/Title'
 import DescPage from '../Components/DescPage'
+import ProjectsList from '../Components/ProjectsList'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <BgVid />
       <Title />
       <DescPage />
+      <ProjectsList />
     </div>
   )
 }
