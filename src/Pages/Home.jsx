@@ -10,7 +10,7 @@ import News from '../Components/News'
 const Home = () => {
   return (
     <>
-      <div className='flex flex-col min-h-screen w-full bg-yellow-500'>
+      <div className='flex flex-col min-h-screen w-full'>
         <BgVid />
         <Title />
         <DescPage />

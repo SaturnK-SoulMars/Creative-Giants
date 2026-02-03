@@ -14,11 +14,11 @@ const ProjectsList = () => {
       ease: "none",
       scrollTrigger: {
         trigger: pinRef.current,
-        start: "top top",
+        start: "top -1%",
         end: () => `+=${window.innerWidth * 2}`,
         scrub: 1,
         pin: true,
-        pinSpacing: true, 
+        pinSpacing: true,
         // markers: true,   
       },
     });
@@ -26,20 +26,20 @@ const ProjectsList = () => {
 
   return (
     <>
-      {/* PINNED SECTION */}
-      <section
+
+      <div
         ref={pinRef}
-        className="h-screen w-screen bg-[#070707] overflow-hidden"
+        className="min-h-[101vh] w-screen bg-[#070707] overflow-hidden"
       >
         <div
           ref={trackRef}
-          className="h-full w-[300vw] flex items-center"
+          className="h-full w-full md:w-[300vw] flex flex-wrap items-center"
         >
           <div className="h-[70vh] w-screen bg-amber-300" />
           <div className="h-[70vh] w-screen bg-amber-700" />
           <div className="h-[70vh] w-screen bg-amber-100" />
         </div>
-      </section>
+      </div>
 
       {/* NEXT NORMAL SECTION */}
       {/* <section className="h-screen w-full bg-green-600 flex items-center justify-center text-white text-4xl">
