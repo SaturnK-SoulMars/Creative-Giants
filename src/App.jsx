@@ -4,6 +4,10 @@ import Home from './Pages/Home'
 import Lenis from "lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Projects from './Pages/Projects';
+import News from './Pages/News';
+import Contact from './Pages/Contact';
+import Process from './Pages/Process';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,6 +33,10 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/process" element={<Process />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }
