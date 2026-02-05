@@ -9,32 +9,32 @@ const Showcase = () => {
     {
       type: "video",
       src: "https://cdn.prod.website-files.com/678fc13a6195245eefbb1f34%2F684fe7eb7bbb5f98f878e6b7_LG%20-%20photoreal%20fast-mp4%20Comp%201-transcode.mp4",
-      height:"50vh"
+      height: "50vh"
     },
     {
       type: "image",
       src: "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-      height:"40vh"
+      height: "40vh"
     },
     {
       type: "video",
       src: "https://www.w3schools.com/html/mov_bbb.mp4",
-      height:"30vh"
+      height: "30vh"
     },
     {
       type: "image",
       src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      height:"50vh"
+      height: "50vh"
     },
     {
       type: "image",
       src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      height:"35vh"
+      height: "35vh"
     },
     {
       type: "video",
       src: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-      height:"45vh"
+      height: "45vh"
     },
   ];
 
@@ -74,7 +74,7 @@ const Showcase = () => {
         <h1 className="font-[Regular] text-4xl  md:text-7xl">things happen.</h1>
       </div>
 
-      
+
       {showcaseData.map((item, i) => (
         <div
           key={i}

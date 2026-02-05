@@ -9,20 +9,28 @@ const ProjectsList = () => {
   const trackRef = useRef(null);
 
   useEffect(() => {
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width: 768px)", () => {
+    // Desktop / Tablet animation
     gsap.to(trackRef.current, {
       xPercent: -80,
       ease: "none",
       scrollTrigger: {
         trigger: pinRef.current,
-        start: "top -1%",
+        start: "top top",
         end: () => `+=${window.innerWidth * 2}`,
         scrub: 1,
         pin: true,
         pinSpacing: true,
-        // markers: true,   
+        // markers: true,
       },
     });
-  }, []);
+  });
+
+  return () => mm.revert(); // cleanup
+}, []);
+
 
   return (
     <>

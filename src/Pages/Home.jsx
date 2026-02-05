@@ -6,6 +6,8 @@ import ProjectsList from '../Components/ProjectsList'
 import Showcase from '../Components/Showcase'
 import Feedback from '../Components/Feedback'
 import News from '../Components/News'
+import Mailing from '../Components/Mailing'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -15,9 +17,11 @@ const Home = () => {
         <Title />
         <DescPage />
         <ProjectsList />
-        <Showcase/>
+        <Showcase />
         <Feedback />
         <News />
+        <Mailing />
+        <Footer />
       </div>
     </>
   )
