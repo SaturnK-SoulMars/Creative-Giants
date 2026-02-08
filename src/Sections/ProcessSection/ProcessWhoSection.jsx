@@ -3,13 +3,13 @@ import React from 'react'
 const ProcessWhoSection = () => {
  
   return (
-    <div className='h-[80vh] lg:h-screen w-full bg-[#FFFEF7]  flex flex-col gap-4 items-center justify-center'>
+    <div className='h-[60vh] lg:h-screen w-full bg-[#FFFEF7]  flex flex-col gap-4 items-center justify-center'>
 
       <div className='overflow-hidden font-[Regular]'>
         <h1>WHO WE ARE</h1>
       </div>
 
-      <div className="h-[50vh] lg:h-[70vh] w-full flex flex-col justify-center items-center px-4 ">
+      <div className="h-[40vh] lg:h-[70vh] w-full flex flex-col justify-center items-center px-4 ">
 
         {/* LINE 1 */}
         <div className="overflow-hidden flex flex-wrap justify-center items-center gap-2 sm:gap-3 

@@ -4,6 +4,8 @@ import Navbar from '../Components/Navbar'
 import ProcessHeroSection from '../Sections/ProcessSection/ProcessHeroSection'
 import ProcessWhoSection from '../Sections/ProcessSection/ProcessWhoSection'
 import Services from '../Sections/ProcessSection/Services'
+import Mailing from '../Components/Mailing'
+import Playbook from '../Sections/ProcessSection/Playbook'
 
 const Process = () => {
 
@@ -12,7 +14,9 @@ const Process = () => {
       <Navbar />
       <ProcessHeroSection />
       <ProcessWhoSection />
+      <Playbook />
       <Services/>
+      <Mailing />
       <Footer />
     </>
   )
