@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='min-h-[110vh] w-full overflow-hidden bg-[#000000] flex flex-col'>
 
-      <div className='px-5 lg:h-[55vh] w-full flex flex-col lg:flex-row '>
+      <div className='px-5 lg:px-8 lg:h-[55vh] w-full flex flex-col lg:flex-row '>
 
         <div className='h-[50vh] lg:h-[55vh] w-full lg:w-[33%] md:w-full flex flex-col justify-between'>
 
@@ -130,7 +130,7 @@ const Footer = () => {
 
       </div>
 
-      <div className=' px-5 h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[55vh] w-full flex items-center justify-center'>
+      <div className=' px-5 lg:px-8 h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[55vh] w-full flex items-center justify-center'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"

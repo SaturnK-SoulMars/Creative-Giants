@@ -1,15 +1,23 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react"
+import { useLocation } from "react-router-dom"
 
-const ScrollToTop = ({ lenis }) => {
-  const { pathname } = useLocation();
+const ScrollToTop = ({ lenisRef, delay = 1000 }) => {
+  const { pathname } = useLocation()
 
-  useEffect(() => {
-    if (!lenis) return;
-    lenis.scrollTo(0, { immediate: true });
-  }, [pathname, lenis]);
+  useLayoutEffect(() => {
+    if (!lenisRef?.current) return
 
-  return null;
-};
+    const timeout = setTimeout(() => {
+      lenisRef.current.scrollTo(0, {
+        immediate: true,
+        force: true,
+      })
+    }, delay)
 
-export default ScrollToTop;
+    return () => clearTimeout(timeout)
+  }, [pathname, delay])
+
+  return null
+}
+
+export default ScrollToTop
